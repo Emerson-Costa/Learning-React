@@ -5,6 +5,12 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Familia from './components/basicos/Familia';
+import FamiliaMembro from './components/basicos/FamiliaMembro';
+import ListaAlunos from './components/repeticao/listaAlunos';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default  ( ) =>{
@@ -14,8 +20,31 @@ export default  ( ) =>{
 
             <div className="Cards">
 
+                <Card titulo="#07 - Comunicação Indireta" color='Magenta'>
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+
+                <Card titulo="#07 - Comunicação Direta" color='black'>
+                    <DiretaPai/>
+                </Card>
+
+                <Card titulo="#06 - Renderização Condicional" color='Red'>
+                     <ParOuImpar numero={20}></ParOuImpar>
+                     <ParOuImpar numero={35}></ParOuImpar>
+                     <UsuarioInfo usuario={{nome: 'Emerson'}}/>
+                     {/*<UsuarioInfo usuario={{email: 'Emerson'}}/>*/}
+                </Card>
+
+                <Card titulo="#05 - Repeticao" color='Orange'>
+                  <ListaAlunos></ListaAlunos>  
+                </Card>
+
                 <Card titulo="#04 - Componentes com Filhos" color=' #fec8c1'>
-                    <Familia sobrenome='Texeira'/>
+                    <Familia sobrenome='Texeira'>
+                        <FamiliaMembro nome='Pedro'/>
+                        <FamiliaMembro nome='Ana'/>
+                        <FamiliaMembro nome='Gustavo'/>
+                    </Familia>
                 </Card>
 
 
