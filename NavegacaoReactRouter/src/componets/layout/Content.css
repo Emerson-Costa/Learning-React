@@ -1,0 +1,6 @@
+.Content{
+    display: flex;
+    flex-grow: 1; /*flex e flex-grow são os mesmo, so que o flex-grow recebe duas propriedades*/
+    background-color: #DDD;
+    padding: 30px; /*permite que todo o conteúdo fica 30px de espaçamento interno*/
+}
