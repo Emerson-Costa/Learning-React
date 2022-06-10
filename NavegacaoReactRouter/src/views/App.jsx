@@ -9,7 +9,7 @@ import Content from "../componets/layout/Content";
 const App = props => (
     <div className="App">
         <BrowserRouter>
-            <Menu/>
+            <Menu />
             <Content />
         </BrowserRouter>        
     </div>
